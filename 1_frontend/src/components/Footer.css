@@ -1,0 +1,7 @@
+/* Mobile first */
+footer {
+  background: var(--primary-color);
+  padding: 20px 0;
+  text-align: center;
+  color: var(--light-color);
+}

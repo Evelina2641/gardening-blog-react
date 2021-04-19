@@ -1,0 +1,54 @@
+/* Mobile first */
+/* - */
+.blog-details {
+  background-color: var(--accent-color);
+  min-height: calc(100vh - 85px - 58px);
+}
+
+.blog-details .container {
+  padding: 4em 1em 4em 1em;
+  background-color: var(--accent-color);
+}
+
+/* -- */
+.blog-details .container .headline h1 {
+  font-size: 3em;
+}
+
+.blog-details .container .headline p {
+  margin: 1.5em 0 2em 0;
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .blog-details .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    padding-top: 7em;
+    padding-bottom: 7em;
+  }
+
+  .blog-details .container .headline h1 {
+    font-size: 3.5em;
+  }
+
+  .blog-details .container .headline p {
+    margin-right: 250px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .blog-details {
+    min-height: calc(100vh - 102px - 58px);
+  }
+
+  .blog-details .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}

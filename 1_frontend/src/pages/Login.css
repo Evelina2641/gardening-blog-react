@@ -1,0 +1,70 @@
+.login {
+    background-color: var(--accent-color);
+    min-height: calc(100vh - 85px - 58px);
+}
+.login .container {
+    padding: 4em 1em;
+    background-color: var(--accent-color);
+}
+.login .container h1 {
+    font-size: 3em;
+    text-align: center;
+}
+.login .container form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+}
+.login .container form .form-control {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login .container form .form-control input,
+.login .container form .form-control textarea {
+    width: 80%;
+    border: 0px;
+    border-bottom: 1px solid var(--primary-color);
+    background: var(--accent-color);
+}
+.login .container form .form-control label {
+    padding: 1em 0 0.5em 0;
+    font-size: 1.1em;
+}
+.login .container form .form-control input {
+    padding: 0.5em;
+    border-radius: 10px;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .login .container {
+        padding-top: 7em;
+        padding-bottom: 3em;
+    }
+    .login .container h1 {
+        font-size: 3.5em;
+        width: 100%;
+    }
+    .login .container form {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    .login .container form .form-control input,
+    .login .container form .form-control textarea {
+        width: 50%;
+    }
+    .btn {
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .login {
+        min-height: calc(100vh - 102px - 58px);
+    }
+    .login .container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}

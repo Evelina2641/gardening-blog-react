@@ -1,0 +1,32 @@
+/* Mobile first */
+/* - */
+.quote {
+  background-color: var(--primary-color);
+}
+
+.quote .container {
+  padding: 4em 1em;
+  background-color: var(--primary-color);
+}
+
+.quote .container p {
+  font-size: 1.1em;
+  line-height: 1.2em;
+  text-align: center;
+  color: var(--light-color);
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .quote .container {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .quote .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}

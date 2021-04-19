@@ -1,0 +1,124 @@
+/* Mobile first */
+/* - */
+.admin {
+  background-color: var(--accent-color);
+  min-height: calc(100vh - 85px - 58px);
+}
+
+.admin .container {
+  padding: 4em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--accent-color);
+}
+
+.admin .container h1 {
+  width: 100%;
+  font-size: 3.5em;
+}
+
+/* -- */
+.admin .container .edit-post {
+  padding: 2em;
+  width: 100%;
+
+  order: 1;
+}
+
+.admin .container .edit-post h2 {
+  text-align: center;
+}
+
+.admin .container .edit-post .posts {
+  margin-top: 1.5em;
+}
+
+.admin .container .edit-post .posts .post {
+  margin-bottom: 1.5em;
+}
+
+.admin .container .edit-post .posts .post h3 {
+  margin-bottom: 0.5em;
+}
+
+.admin .container .edit-post .posts .post button {
+  margin: 0 0.5em;
+}
+
+/* -- */
+.admin .container .add-post {
+  padding: 2em;
+  width: 100%;
+}
+
+.admin .container .add-post h2 {
+  text-align: center;
+}
+
+.admin .container .add-post form {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 1em;
+}
+
+.admin .container .add-post form .form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.admin .container .add-post form .form-control label {
+  font-size: 1.1em;
+}
+
+.admin .container .add-post form .form-control input,
+.admin .container .add-post .form-control textarea {
+  width: 80%;
+
+  padding: 0.5em;
+  outline: none;
+  border: 0px;
+  border-bottom: 1px solid var(--primary-color);
+  background-color: var(--accent-color);
+}
+
+.admin .container .add-post form .form-control button.btn-new-post {
+  margin: 1em;
+}
+.admin .container .logout {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .admin .container .edit-post {
+    width: 50%;
+
+    order: 0;
+  }
+
+  .admin .container .add-post {
+    width: 50%;
+  }
+  .admin .container .logout button {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .admin {
+    min-height: calc(100vh - 102px - 58px);
+  }
+
+  .admin .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,86 @@
+/* Mobile first */
+/* - */
+.contact {
+  background-color: var(--accent-color);
+  min-height: calc(100vh - 85px - 58px);
+}
+
+.contact .container {
+  padding: 4em 1em;
+  background-color: var(--accent-color);
+}
+
+/* -- */
+.contact .container h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+/* -- */
+.contact .container form {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 2em;
+}
+
+.contact .container form .form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .container form .form-control label {
+  padding: 1em 0 0.5em 0;
+  font-size: 1.1em;
+}
+
+.contact .container form .form-control input,
+.contact .container form .form-control textarea {
+  width: 80%;
+
+  padding: 0.5em;
+  outline: none;
+  border: 0px;
+  border-bottom: 1px solid var(--primary-color);
+  background-color: var(--accent-color);
+}
+.contact .container .submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .contact .container {
+    padding-top: 7em;
+    padding-bottom: 3em;
+  }
+
+  .contact .container h1 {
+    font-size: 3.5em;
+  }
+
+  .contact .container form {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .contact .container form .form-control input,
+  .contact .container form .form-control textarea {
+    width: 50%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .contact {
+    min-height: calc(100vh - 102px - 58px);
+  }
+
+  .contact .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
